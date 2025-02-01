@@ -10,6 +10,19 @@ class IntroScreen extends StatefulWidget {
 class _IntroScreenState extends State<IntroScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: Colors.black,
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Image.asset(
+            'assets/characters.png',
+          ),
+          Image.asset(
+            'assets/logo.gif',
+          )
+        ],
+      ),
+    );
   }
 }
